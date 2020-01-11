@@ -19,18 +19,22 @@
             crossorigin="anonymous"></script>
     <!-- Global CSS -->
     <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/plugins/bootstrap/css/ldbtn.min.css">
+    <link rel="stylesheet" href="assets/plugins/bootstrap/css/loading.min.css">
+    <link rel="stylesheet" href="assets/plugins/bootstrap/css/ldld.min.css">
     <!-- Theme CSS -->
     <link id="theme-style" rel="stylesheet" href="assets/css/orbit-1.css">
     <link rel="stylesheet" href="assets/css/square-list.css">
+    <script src="assets/plugins/bootstrap/js/ldld.min.js"></script>
 </head>
 
 <body>
 <div class="wrapper">
     <div class="sidebar-wrapper">
         <div class="profile-container">
-            <img class="profile" src="assets/images/profile.png" alt=""/>
+            <img class="profile" src="assets/images/shama-profile.jpg" alt=""/>
             <h1 class="name">Shaik Shama Zabeen</h1>
-            <h3 class="tagline">Data Science Enthusiast</h3>
+            <h3 class="tagline">Data Science Professional</h3>
         </div><!--//profile-container-->
 
         <div class="contact-container container-block">
@@ -40,7 +44,7 @@
                 <li class="phone"><i class="fas fa-phone"></i><a href="tel:+18034775794">+1 (803) 477-5794 </a></li>
                 <li class="website"><i class="fas fa-globe"></i><a href="#" target="_blank">Download CV</a></li>
                 <li class="linkedin"><i class="fab fa-linkedin-in"></i><a
-                        href="https://www.linkedin.com/in/shama-zabeen-shaik-ba02b7a1" target="_blank">linkedin.com/in/shama-zabeen-shaik-ba02b7a1</a>
+                        href="https://www.linkedin.com/in/shama-zabeen-shaik" target="_blank">linkedin.com/in/shama-zabeen-shaik</a>
                 </li>
                 <li class="github"><i class="fab fa-github"></i><a href="https://github.com/ShamaSK" target="_blank">github.com/ShamaSK</a>
                 </li>
@@ -51,12 +55,14 @@
             <h2 class="container-block-title">Education</h2>
             <div class="item">
                 <h4 class="degree">Master of Science in Computer Science</h4>
-                <h5 class="meta">University of North Carolina Charlotte at Charlotte</h5>
+                <h5 class="meta">University of North Carolina Charlotte</h5>
+                <div class="time">Charlotte, NC</div>
                 <div class="time">2017 - 2018</div>
             </div><!--//item-->
             <div class="item">
                 <h4 class="degree">Bachelor of Technology in Computer Science and Engineering</h4>
                 <h5 class="meta">Vellore Institute of Technology</h5>
+                <div class="time">Vellore, India</div>
                 <div class="time">2013 - 2017</div>
             </div><!--//item-->
         </div><!--//education-container-->
@@ -74,26 +80,6 @@
                 <div class="time">Mar 2019</div>
             </div><!--//item-->
         </div><!--//education-container-->
-
-        <div class="languages-container container-block">
-            <h2 class="container-block-title">Languages</h2>
-            <ul class="list-unstyled interests-list">
-                <li>Urdu <span class="lang-desc">(Native)</span></li>
-                <li>Hindi <span class="lang-desc">(Professional)</span></li>
-                <li>Telugu <span class="lang-desc">(Professional)</span></li>
-                <li>English <span class="lang-desc">(Professional)</span></li>
-            </ul>
-        </div><!--//interests-->
-
-        <div class="interests-container container-block">
-            <h2 class="container-block-title">Interests</h2>
-            <ul class="list-unstyled interests-list">
-                <li>Climbing</li>
-                <li>Snowboarding</li>
-                <li>Cooking</li>
-            </ul>
-        </div><!--//interests-->
-
     </div><!--//sidebar-wrapper-->
 
     <div class="main-wrapper">
@@ -108,6 +94,13 @@
                 <p>Actively looking for full-time opportunities in the field of Data Science, Machine learning as Data
                     Scientist, Data Analyst, Business Intelligence Analyst.</p>
             </div><!--//summary-->
+            <div class="button-rainbow" style="--bg-color: #ecf0f1;">
+                <a href="https://github.com/ShamaSK/shamask.github.io/raw/master/Shama%20Shaik%20Zabeen_Resume_v2.docx">
+                    <button>Download Resume!
+                        <div class="rainbow"></div>
+                    </button>
+                </a>
+            </div>
         </section><!--//section-->
 
         <section class="section experiences-section">
@@ -127,14 +120,36 @@
                         predict the potential failures on a selected application.
                     </li>
                     <br>
+                    <ul class="details">
+                        <li><b style="text-decoration: underline">Outcome:</b> The model helped enhance the resource
+                            utilization by 50% and helped in cutting down the maintenance time from 12 hours to 4 hours
+                            every weekend.
+                        </li>
+                    </ul>
+                    <br>
                     <li>Create live interactive single platform view dashboards to monitor emergency fixes, status
                         updates for critical processes and job runs, abends by the root cause, ad-hoc requests to be
                         addressed.
                     </li>
                     <br>
+                    <ul class="details">
+                        <li><b style="text-decoration: underline">Outcome:</b> Rather than using 5 different
+                            applications to monitor a job or an application, this dashboard platform gives user the
+                            privilege to view all of the requirements in a single page, Thus saving tremendous time and
+                            manual efforts.
+                        </li>
+                    </ul>
+                    <br>
                     <li>Design Database schema to store the SLA compliance metrics for any given job/application at a
                         specified time of the day. Create interactive dashboards to monitor SLA compliance.
                     </li>
+                    <br>
+                    <ul class="details">
+                        <li><b style="text-decoration: underline">Outcome:</b> This dashboard gives user a clear picture
+                            of the jobs that are about to miss an SLA and notifies the user through mail when the time
+                            for SLA compliance is <25% remaining.
+                        </li>
+                    </ul>
                     <br>
                     <li>
                         Work with NLP libraries such as NLTK, openNLP, Stanford-NLP, WordNet, SAS Text Miner or the
@@ -158,16 +173,32 @@
                         <p>Fetched employee data from the server to clean, pre-process, and analyze the insights of the
                             attrition rate. Predict the likelihood of the employee attrition rate and create dashboard
                             views of analysis and predictions.</p>
+                        <ul class="details">
+                            <li><b style="text-decoration: underline">Outcome:</b> Suggested a new tactic to persuade
+                                leaving employees to stay with the company, resulting in a 5% decrease in attrition.
+                            </li>
+                        </ul>
                         <br>
                         <li style="font-weight: bold">Gender Diversity Analysis</li>
                         <p>Using complex SQL queries, performed ETL operations on data. Interpreted & analyzed the
                             results using statistical techniques like MS EXCEL, Tableau. Provide ongoing reports and
                             display in front-end dashboards created using Tableau, R-shiny, Python, MySQL.</p>
+                        <ul class="details">
+                            <li><b style="text-decoration: underline">Outcome:</b> Introduced a live connection to the
+                                dashboard with auto fetching of data from the database, resulting in reduced manual data
+                                fetch and load operations.
+                            </li>
+                        </ul>
                         <br>
                         <li style="font-weight: bold">Tele Commute (Work from Home) Analysis</li>
                         <p>Scripted a priority scheduling algorithm in Python to prioritize the work from home
                             eligibility. Analyzing the tele commute utility ratio and the trends in the work from home
                             days utilized.</p>
+                        <ul class="details">
+                            <li><b style="text-decoration: underline">Outcome:</b> After introducing the priority
+                                scheduling, the tele commute rate increased slightly by 0.8% wit in a month time frame.
+                            </li>
+                        </ul>
                     </ul>
                 </div><!--//details-->
             </div><!--//item-->
@@ -187,6 +218,12 @@
                             increasing the productivity of sales and helping in better understanding of the data
                             insights.
                         </li>
+                        <br>
+                        <ul class="details">
+                            <li><b style="text-decoration: underline">Outcome:</b> Trend & competitive analysis on
+                                Continental’s Market Pricing data resulting an increase of 16% sales of winter tires.
+                            </li>
+                        </ul>
                     </ul>
                 </div><!--//details-->
             </div><!--//item-->
@@ -204,6 +241,12 @@
                         <li>Performed data base schema design, data collection, data base creation and web designing
                             using JavaScript, MySQL, HTML, CSS
                         </li>
+                        <br>
+                        <ul class="details">
+                            <li><b style="text-decoration: underline">Outcome:</b> Created a database using MySQL and
+                                information of about 10,000 students and 280 staff with different logins for both.
+                            </li>
+                        </ul>
                     </ul>
                 </div><!--//details-->
             </div><!--//item-->
@@ -231,6 +274,12 @@
                         the sentiment into positive, neutral, and negative on the topics discovered from LDA.
                     </li>
                 </ul>
+                <div class="button-know-more" style="--bg-color: #ecf0f1;">
+                    <a href="#">
+                        <button>Know more!
+                        </button>
+                    </a>
+                </div>
             </div><!--//item-->
 
             <div class="item">
@@ -254,6 +303,12 @@
                         </li>
                     </ul>
                 </div><!--//details-->
+                <div class="button-know-more" style="--bg-color: #ecf0f1;">
+                    <a href="http://my-dash-hrpred2.herokuapp.com/" target="_blank">
+                        <button>Know more!
+                        </button>
+                    </a>
+                </div>
             </div><!--//item-->
 
             <div class="item">
@@ -277,6 +332,12 @@
                         </li>
                     </ul>
                 </div><!--//details-->
+                <div class="button-know-more" style="--bg-color: #ecf0f1;">
+                    <a href="https://skshama18.wixsite.com/website-1" target="_blank">
+                        <button>Know more!
+                        </button>
+                    </a>
+                </div>
             </div><!--//item-->
 
         </section><!--//section-->
@@ -284,7 +345,8 @@
         <section class="section projects-section">
             <h2 class="section-title"><span class="icon-holder"><i class="fas fa-rocket"></i></span>Skills</h2>
             <div class="item">
-                <span class="project-title" style="font-weight: bold">Programming Languages</span> - <span class="project-tagline">R, Python, SQL, HTML, CSS, JavaScript, C++</span>
+                <span class="project-title" style="font-weight: bold">Programming Languages</span> - <span
+                    class="project-tagline">R, Python, SQL, HTML, CSS, JavaScript, C++</span>
 
             </div><!--//item-->
             <div class="item">
@@ -292,10 +354,12 @@
                 <span class="project-tagline">RStudio, Python, Anaconda, Jupyter Notebook, Tableau, Dash by Plotly, Knime, Lisp Miner, Orange, XL Miner, Weka, MySQL, PostgreSQL, GitHub, Microsoft Excel, Microsoft Visio, Splunk</span>
             </div><!--//item-->
             <div class="item">
-                <span class="project-title" style="font-weight: bold">Machine Learning</span> - <span class="project-tagline">Linear Regression, Classification, Logistic Regression, Decision Trees, Random Forests, SVM, Hypothesis Testing, K-NN, K-Means Clustering, Text Analysis, Sentiment Analysis, Time Series Analysis, Survival Analysis, A/B Testing, Numpy, Matplotlib, Sckit-learn, Pandas, Scipy</span>
+                <span class="project-title" style="font-weight: bold">Machine Learning</span> - <span
+                    class="project-tagline">Linear Regression, Classification, Logistic Regression, Decision Trees, Random Forests, SVM, Hypothesis Testing, K-NN, K-Means Clustering, Text Analysis, Sentiment Analysis, Time Series Analysis, Survival Analysis, A/B Testing, Numpy, Matplotlib, Sckit-learn, Pandas, Scipy</span>
             </div><!--//item-->
             <div class="item">
-                <span class="project-title" style="font-weight: bold">NLP techniques</span> - <span class="project-tagline">Tokenization, Part-of-speech Tagging, Parsing, Stemming, Lemmatization, Semantic Analysis, Named Entity Recognition, Modeling and Work Representations, RNN, ConvNets, TF-IDF, LDA, Word2Vec</span>
+                <span class="project-title" style="font-weight: bold">NLP techniques</span> - <span
+                    class="project-tagline">Tokenization, Part-of-speech Tagging, Parsing, Stemming, Lemmatization, Semantic Analysis, Named Entity Recognition, Modeling and Work Representations, RNN, ConvNets, TF-IDF, LDA, Word2Vec</span>
             </div><!--//item-->
         </section><!--//section-->
 
@@ -359,13 +423,8 @@
 
 <footer class="footer">
     <div class="text-center">
-        <!--/* This template is released under the Creative Commons Attribution 3.0 License. Please keep the attribution link below when using for your own project. Thank you for your support. :) If you'd like to use the template without the attribution, you can check out other commercial license options via our website: themes.3rdwavemedia.com */-->
-        <small class="copyright">Designed with <i class="fas fa-heart"></i> by <a href="http://themes.3rdwavemedia.com"
-                                                                                  target="_blank">Xiaoying Riley</a> for
-            developers</small>
     </div><!--//container-->
 </footer><!--//footer-->
-
 </body>
 </html> 
 

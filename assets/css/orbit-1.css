@@ -16,6 +16,8 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+
+
 h1, h2, h3, h4, h5, h6 {
   font-weight: 700;
 }
@@ -182,6 +184,7 @@ p {
   background: #fff;
   padding: 60px;
   padding-right: 300px;
+  text-align: justify !important;
 }
 
 .main-wrapper .section-title {
